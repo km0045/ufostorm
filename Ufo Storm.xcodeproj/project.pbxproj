@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE7395AA2174D5890023B3FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7395A92174D5890023B3FA /* Assets.xcassets */; };
+		CE7395B02174D5890023B3FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7395AF2174D5890023B3FA /* main.m */; };
+		CE7395BA2174D5890023B3FA /* Ufo_StormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7395B92174D5890023B3FA /* Ufo_StormTests.m */; };
+		CE7395C52174D5890023B3FA /* Ufo_StormUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7395C42174D5890023B3FA /* Ufo_StormUITests.m */; };
+		CE7395D62174D8FD0023B3FA /* libXNI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7395D52174D8FD0023B3FA /* libXNI.a */; };
+		CE7395D82174D9200023B3FA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7395D72174D9200023B3FA /* AudioToolbox.framework */; };
+		CE7395DA2174D92A0023B3FA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7395D92174D92A0023B3FA /* AVFoundation.framework */; };
+		CE7395DC2174D93B0023B3FA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7395DB2174D93B0023B3FA /* GameKit.framework */; };
+		CE7395DF2174D9640023B3FA /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7395DD2174D9640023B3FA /* OpenAL.framework */; };
+		CE7395E02174D9640023B3FA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7395DE2174D9640023B3FA /* OpenGLES.framework */; };
+		CE7395E22174D9730023B3FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7395E12174D9730023B3FA /* QuartzCore.framework */; };
+		CE7395E52174DBCB0023B3FA /* UfoStorm.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7395E42174DBCB0023B3FA /* UfoStorm.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE7395B62174D5890023B3FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7395952174D5800023B3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE73959C2174D5800023B3FA;
+			remoteInfo = "Ufo Storm";
+		};
+		CE7395C12174D5890023B3FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7395952174D5800023B3FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE73959C2174D5800023B3FA;
+			remoteInfo = "Ufo Storm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE73959D2174D5800023B3FA /* Ufo Storm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ufo Storm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7395A92174D5890023B3FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE7395AE2174D5890023B3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7395AF2174D5890023B3FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 1; path = main.m; sourceTree = "<group>"; };
+		CE7395B52174D5890023B3FA /* Ufo StormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ufo StormTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7395B92174D5890023B3FA /* Ufo_StormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ufo_StormTests.m; sourceTree = "<group>"; };
+		CE7395BB2174D5890023B3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7395C02174D5890023B3FA /* Ufo StormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ufo StormUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7395C42174D5890023B3FA /* Ufo_StormUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ufo_StormUITests.m; sourceTree = "<group>"; };
+		CE7395C62174D5890023B3FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7395D32174D8EE0023B3FA /* XNI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XNI; sourceTree = "<group>"; };
+		CE7395D52174D8FD0023B3FA /* libXNI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libXNI.a; path = XNI/libXNI.a; sourceTree = "<group>"; };
+		CE7395D72174D9200023B3FA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CE7395D92174D92A0023B3FA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE7395DB2174D93B0023B3FA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		CE7395DD2174D9640023B3FA /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		CE7395DE2174D9640023B3FA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CE7395E12174D9730023B3FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE7395E32174DBCB0023B3FA /* UfoStorm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UfoStorm.h; sourceTree = "<group>"; };
+		CE7395E42174DBCB0023B3FA /* UfoStorm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UfoStorm.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE73959A2174D5800023B3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7395E22174D9730023B3FA /* QuartzCore.framework in Frameworks */,
+				CE7395DF2174D9640023B3FA /* OpenAL.framework in Frameworks */,
+				CE7395E02174D9640023B3FA /* OpenGLES.framework in Frameworks */,
+				CE7395DC2174D93B0023B3FA /* GameKit.framework in Frameworks */,
+				CE7395DA2174D92A0023B3FA /* AVFoundation.framework in Frameworks */,
+				CE7395D82174D9200023B3FA /* AudioToolbox.framework in Frameworks */,
+				CE7395D62174D8FD0023B3FA /* libXNI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7395B22174D5890023B3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7395BD2174D5890023B3FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE7395942174D5800023B3FA = {
+			isa = PBXGroup;
+			children = (
+				CE73959F2174D5800023B3FA /* Ufo Storm */,
+				CE7395B82174D5890023B3FA /* Ufo StormTests */,
+				CE7395C32174D5890023B3FA /* Ufo StormUITests */,
+				CE73959E2174D5800023B3FA /* Products */,
+				CE7395D22174D8EE0023B3FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE73959E2174D5800023B3FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE73959D2174D5800023B3FA /* Ufo Storm.app */,
+				CE7395B52174D5890023B3FA /* Ufo StormTests.xctest */,
+				CE7395C02174D5890023B3FA /* Ufo StormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE73959F2174D5800023B3FA /* Ufo Storm */ = {
+			isa = PBXGroup;
+			children = (
+				CE7395A92174D5890023B3FA /* Assets.xcassets */,
+				CE7395AE2174D5890023B3FA /* Info.plist */,
+				CE7395AF2174D5890023B3FA /* main.m */,
+				CE7395E32174DBCB0023B3FA /* UfoStorm.h */,
+				CE7395E42174DBCB0023B3FA /* UfoStorm.m */,
+			);
+			path = "Ufo Storm";
+			sourceTree = "<group>";
+		};
+		CE7395B82174D5890023B3FA /* Ufo StormTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7395B92174D5890023B3FA /* Ufo_StormTests.m */,
+				CE7395BB2174D5890023B3FA /* Info.plist */,
+			);
+			path = "Ufo StormTests";
+			sourceTree = "<group>";
+		};
+		CE7395C32174D5890023B3FA /* Ufo StormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7395C42174D5890023B3FA /* Ufo_StormUITests.m */,
+				CE7395C62174D5890023B3FA /* Info.plist */,
+			);
+			path = "Ufo StormUITests";
+			sourceTree = "<group>";
+		};
+		CE7395D22174D8EE0023B3FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7395E12174D9730023B3FA /* QuartzCore.framework */,
+				CE7395DD2174D9640023B3FA /* OpenAL.framework */,
+				CE7395DE2174D9640023B3FA /* OpenGLES.framework */,
+				CE7395DB2174D93B0023B3FA /* GameKit.framework */,
+				CE7395D92174D92A0023B3FA /* AVFoundation.framework */,
+				CE7395D72174D9200023B3FA /* AudioToolbox.framework */,
+				CE7395D52174D8FD0023B3FA /* libXNI.a */,
+				CE7395D32174D8EE0023B3FA /* XNI */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE73959C2174D5800023B3FA /* Ufo Storm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7395C92174D5890023B3FA /* Build configuration list for PBXNativeTarget "Ufo Storm" */;
+			buildPhases = (
+				CE7395992174D5800023B3FA /* Sources */,
+				CE73959A2174D5800023B3FA /* Frameworks */,
+				CE73959B2174D5800023B3FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ufo Storm";
+			productName = "Ufo Storm";
+			productReference = CE73959D2174D5800023B3FA /* Ufo Storm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE7395B42174D5890023B3FA /* Ufo StormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7395CC2174D5890023B3FA /* Build configuration list for PBXNativeTarget "Ufo StormTests" */;
+			buildPhases = (
+				CE7395B12174D5890023B3FA /* Sources */,
+				CE7395B22174D5890023B3FA /* Frameworks */,
+				CE7395B32174D5890023B3FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7395B72174D5890023B3FA /* PBXTargetDependency */,
+			);
+			name = "Ufo StormTests";
+			productName = "Ufo StormTests";
+			productReference = CE7395B52174D5890023B3FA /* Ufo StormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE7395BF2174D5890023B3FA /* Ufo StormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7395CF2174D5890023B3FA /* Build configuration list for PBXNativeTarget "Ufo StormUITests" */;
+			buildPhases = (
+				CE7395BC2174D5890023B3FA /* Sources */,
+				CE7395BD2174D5890023B3FA /* Frameworks */,
+				CE7395BE2174D5890023B3FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7395C22174D5890023B3FA /* PBXTargetDependency */,
+			);
+			name = "Ufo StormUITests";
+			productName = "Ufo StormUITests";
+			productReference = CE7395C02174D5890023B3FA /* Ufo StormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE7395952174D5800023B3FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CE73959C2174D5800023B3FA = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					CE7395B42174D5890023B3FA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE73959C2174D5800023B3FA;
+					};
+					CE7395BF2174D5890023B3FA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = CE73959C2174D5800023B3FA;
+					};
+				};
+			};
+			buildConfigurationList = CE7395982174D5800023B3FA /* Build configuration list for PBXProject "Ufo Storm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE7395942174D5800023B3FA;
+			productRefGroup = CE73959E2174D5800023B3FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE73959C2174D5800023B3FA /* Ufo Storm */,
+				CE7395B42174D5890023B3FA /* Ufo StormTests */,
+				CE7395BF2174D5890023B3FA /* Ufo StormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE73959B2174D5800023B3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7395AA2174D5890023B3FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7395B32174D5890023B3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7395BE2174D5890023B3FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE7395992174D5800023B3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7395E52174DBCB0023B3FA /* UfoStorm.m in Sources */,
+				CE7395B02174D5890023B3FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7395B12174D5890023B3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7395BA2174D5890023B3FA /* Ufo_StormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7395BC2174D5890023B3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7395C52174D5890023B3FA /* Ufo_StormUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE7395B72174D5890023B3FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE73959C2174D5800023B3FA /* Ufo Storm */;
+			targetProxy = CE7395B62174D5890023B3FA /* PBXContainerItemProxy */;
+		};
+		CE7395C22174D5890023B3FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE73959C2174D5800023B3FA /* Ufo Storm */;
+			targetProxy = CE7395C12174D5890023B3FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE7395C72174D5890023B3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE7395C82174D5890023B3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE7395CA2174D5890023B3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ufo Storm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XNI",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fri.Ufo-Storm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Debug;
+		};
+		CE7395CB2174D5890023B3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ufo Storm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XNI",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fri.Ufo-Storm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+			};
+			name = Release;
+		};
+		CE7395CD2174D5890023B3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ufo StormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fri.Ufo-StormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ufo Storm.app/Ufo Storm";
+			};
+			name = Debug;
+		};
+		CE7395CE2174D5890023B3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ufo StormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fri.Ufo-StormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ufo Storm.app/Ufo Storm";
+			};
+			name = Release;
+		};
+		CE7395D02174D5890023B3FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ufo StormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fri.Ufo-StormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ufo Storm";
+			};
+			name = Debug;
+		};
+		CE7395D12174D5890023B3FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Ufo StormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.fri.Ufo-StormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ufo Storm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE7395982174D5800023B3FA /* Build configuration list for PBXProject "Ufo Storm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7395C72174D5890023B3FA /* Debug */,
+				CE7395C82174D5890023B3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7395C92174D5890023B3FA /* Build configuration list for PBXNativeTarget "Ufo Storm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7395CA2174D5890023B3FA /* Debug */,
+				CE7395CB2174D5890023B3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7395CC2174D5890023B3FA /* Build configuration list for PBXNativeTarget "Ufo StormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7395CD2174D5890023B3FA /* Debug */,
+				CE7395CE2174D5890023B3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7395CF2174D5890023B3FA /* Build configuration list for PBXNativeTarget "Ufo StormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7395D02174D5890023B3FA /* Debug */,
+				CE7395D12174D5890023B3FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE7395952174D5800023B3FA /* Project object */;
+}
